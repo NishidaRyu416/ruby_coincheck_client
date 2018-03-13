@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ruby_coincheck_client/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ruby_coincheck_client"
+  spec.name          = "fixed_ruby_coincheck_client"
   spec.version       = RubyCoincheckClient::VERSION
-  spec.authors       = ["coincheck"]
-  spec.email         = ["info@coincheck.jp"]
+  spec.authors       = ["Ryu Nishida"]
+  spec.email         = ["nishidaryu416@gmail.com"]
 
-  spec.summary       = %q{This is ruby client of coincheck api}
-  spec.homepage      = "https://github.com/coincheckjp/ruby_coincheck_client"
+  spec.summary       = %q{This is a ruby client of coincheck api}
+  spec.homepage      = "https://github.com/NishidaRyu416/ruby_coincheck_client"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
