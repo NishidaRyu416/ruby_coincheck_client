@@ -3,13 +3,14 @@
 # RubyCoincheckClient
 
 This is ruby client implementation for Coincheck API.
+One thing different from official one is that this gem doesn't have the error that occurs when we call the read_trades method.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby_coincheck_client'
+gem 'fixed_ruby_coincheck_client'
 ```
 
 And then execute:
@@ -18,13 +19,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ruby_coincheck_client
+    $ gem install fixed_ruby_coincheck_client
 
 ## Usage
 
 ```ruby
 #!/usr/bin/env ruby -Ilib
-require 'ruby_coincheck_client'
+require 'fixed_ruby_coincheck_client'
 
 cc = CoincheckClient.new("YOUR API KEY", "YOUR SECRET KEY")
 response = cc.read_balance
