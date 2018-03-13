@@ -131,10 +131,7 @@ class CoincheckClient
   end
 
   def read_trades(pair: Pair::BTC_JPY )
-    params = {pair: Pair::BTC_JPY }
-    uri = URI.parse @@base_url + "api/trades"
-    uri.query = URI.encode_www_form(params)
-    p uri
+    uri = URI.parse @@base_url + "api/trades#{pair}"
     request_for_get(uri)
   end
 
