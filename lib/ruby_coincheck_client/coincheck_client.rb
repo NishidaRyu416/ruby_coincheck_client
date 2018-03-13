@@ -5,6 +5,7 @@ require 'json'
 require_relative './currency'
 
 class CoincheckClient
+
   include Currency
 
   @@base_url = "https://coincheck.com/"
@@ -133,6 +134,7 @@ class CoincheckClient
     params = {pair: Pair::BTC_JPY }
     uri = URI.parse @@base_url + "api/trades"
     uri.query = URI.encode_www_form(params)
+    p uri
     request_for_get(uri)
   end
 
